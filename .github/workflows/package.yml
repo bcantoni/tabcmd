@@ -58,7 +58,6 @@ jobs:
     container:
       image: ${{ matrix.CONTAINER }}
       options: --privileged
-      if: matrix.TARGET == 'ubuntu'
 
     steps:
       - uses: actions/checkout@v4
