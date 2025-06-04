@@ -48,7 +48,7 @@ jobs:
             ASSET_MIME: application/zip
           - os: ubuntu-latest
             TARGET: ubuntu
-            CONTAINER: quay.io/centos/centos:stream8
+            CONTAINER: quay.io/centos/centos:stream9
             CMD_BUILD: >
               pyinstaller --clean -y --distpath ./dist/ubuntu tabcmd-linux.spec &&
               chown -R --reference=. ./dist/ubuntu
